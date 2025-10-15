@@ -1,0 +1,53 @@
+{
+  "name": "personal-expense-tracker",
+  "version": "1.0.0",
+  "description": "A full-stack PWA expense tracker designed for content creators in Singapore to manage personal and business finances, track income from multiple sources (display ads, affiliate marketing), categorize expenses with tax-deductible flags, and generate IRAS-compliant quarterly and yearly P&L reports.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext js,jsx",
+    "server": "node server/index.js",
+    "server:dev": "node --watch server/index.js",
+    "db:setup": "node setup-db.js"
+  },
+  "keywords": [
+    "expense-tracker",
+    "pwa",
+    "react",
+    "vite"
+  ],
+  "author": "jamesdunnington",
+  "license": "ISC",
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.12.2",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^3.0.3",
+    "jspdf-autotable": "^5.0.2",
+    "papaparse": "^5.5.3",
+    "pg": "^8.16.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4",
+    "vite": "^7.1.10"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "sharp": "^0.34.4",
+    "tailwindcss": "^3.4.18",
+    "vite-plugin-pwa": "^1.1.0",
+    "workbox-window": "^7.3.0"
+  }
+}
